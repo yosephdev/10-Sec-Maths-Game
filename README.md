@@ -1,8 +1,12 @@
-Ten Seconds Math Game
-A web game built using HTML, CSS and JavaScript
+# General info
+This Ten Seconds Math Web Game is part of my Altcademy JQuery course
 
-Try to beat the time!
-You've got 10 seconds to start. Answer questions to get more time, and don't let the clock run out.
+# Technologies
+Game is created with:
 
-Play
-Test it yourself over here at http://www.mental-math-trainer.com
+    HTML/CSS    
+    BootStrap 3 version: v3.3.7
+    JavaScript
+    JQuery
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/65ac6907-2af3-4a80-94ad-1a4fe5a85512/deploy-status)](https://app.netlify.com/sites/ten-seconds-maths-game/deploys)
