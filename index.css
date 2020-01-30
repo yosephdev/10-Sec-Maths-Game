@@ -1,0 +1,47 @@
+html, body{
+	width: 100%;
+	margin: 0;
+	font-family: 'verdana';
+}
+h2 {
+	color: black;
+	font-weight: 100;
+	font-size: 40px;
+}
+body{
+	background: rgba(190,204,0,1);
+	width: 80%;
+	margin: 0 auto;
+}
+input {
+	font-size: 22px;
+	max-width: 50%;
+	border: none;
+	border-radius: 10px;
+	background-color: #E6E6E6;
+	text-align: center;
+}
+.container {
+	width: 70%;
+	height: 80vh;
+	position: relative;
+	z-index: 2;
+	margin: 60px 15%;
+	text-align: center;
+}
+#time-left {
+	font-size: 30px;
+	font-weight: 800;
+}
+.btn {
+	background-color: #3274A7;
+	color: #fff;
+	border: none;
+	padding: 10px 30px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
