@@ -57,8 +57,7 @@ $(document).ready(function() {
 		checkAnswer(Number($(this).val()), currentQuestion.answer);
 	});
 	$('#restart-button').on('click', function () {
-		startGame();
-		checkAnswer(Number($(this).val()), currentQuestion.answer);
+		renderNewQuestion();		
 	});
 	renderNewQuestion();
 });
