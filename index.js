@@ -74,3 +74,5 @@ $(document).ready(function(){
 		$('#score').text(score);
 		renderNewQuestion()
 	});
+  renderNewQuestion();
+});
