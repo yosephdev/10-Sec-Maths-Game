@@ -9,4 +9,4 @@ Game is created with:
     JavaScript
     JQuery
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c7416444-2513-4d07-8f81-74889c29d296/deploy-status)](https://app.netlify.com/sites/10-seconds-math-game/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9b107593-d993-4b23-a3f6-a9254771fd80/deploy-status)](https://app.netlify.com/sites/10-seconds-math-game/deploys)
