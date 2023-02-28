@@ -1,78 +1,120 @@
-*{ margin: 0; padding: 0;
-	font-family: 'Playfair Display', sans-serif;}
-
-section {
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background-color: grey;
+body {
+	font-family: 'Roboto', sans-serif;
 }
 
-h1 {
-	text-transform: capitalize;
+.title {
 	font-size: 3rem;
-	text-shadow: 1px 1px 2px white;
-	animation: zooms 1s linear infinite;
-	animation-direction: alternate;
+	margin-top: 2rem;
+	text-align: center;
+	color: #fff;
+	padding-top: 30px;
 }
 
-@keyframes zooms {
-	from{transform: translateX(-20px);}
-	to {transform: translateX(20px);}
+.game-description{
+	text-align: center;
+		font-size: 1.6rem;
+		font-weight: 500;
+		color: #fff;
+		margin: 2rem auto;
+		max-width: 600px;
 }
 
 .centerdiv {
-	width: 500px;
-	height: 400px;
-	background-color: khaki;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-direction: column;
+	height: 80vh;
 }
 
 .insertBox {
-	display: flex;
-	justify-content: center;
-	align-items:
-	height: 100px;
-}
-
-h2 {
-
-	font-weight: 100;
-	font-size: 40px;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 10px;
+	padding: 2rem;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .middleBox {
-	margin: 15px 0;
-	padding: 5px 0;
-	font-size: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.equation {
+	font-size: 3rem;
+	font-weight: bold;
+	margin-bottom: 2rem;
+}
+
+.user-input {
+	font-size: 2rem;
+	font-weight: bold;
 	text-align: center;
-	width: 180px;
+	padding: 1rem;
+	margin-bottom: 2rem;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-input {
-	margin: 15px 0;
-	padding: 5px 0;
-	font-size: 15px;
-	text-align: center;
-	width: 180px;
+.score {
+	font-size: 2rem;
+	font-weight: bold;
+	color: #f44336;
 }
 
-#time-left {
-	font-size: 40px;
-	font-weight: 800;
+.restart-button {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #fff;
+	background-color: #4CAF50;
+	border: none;
+	border-radius: 10px;
+	padding: 1rem 2rem;
+	margin-top: 2rem;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
 }
 
-#restart-button {
-	padding: 10px 20px;
-	font-size: 1.4rem;
-	text-transform: uppercase;
-	color: white;
-	background-color: #079992;
-	border-bottom-left-radius: 30px;
-	border-bottom-right-radius: 30px;
+.restart-button:hover {
+	background-color: #3e8e41;
+}
+
+footer {
+	background-color: #222;
+	color: #fff;
+	padding: 50px 0;
+}
+
+footer h3 {
+	color: #f44336;
+}
+
+footer ul {
+	list-style: none;
+	padding: 0;
+}
+
+footer ul li {
+	margin-bottom: 10px;
+}
+
+footer a {
+	color: #fff;
+	text-decoration: none;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+footer hr {
+	border-top: 1px solid #fff;
+}
+
+footer p {
+	margin-bottom: 0;
+}
+
+footer #current-date {
+	font-weight: bold;
 }
