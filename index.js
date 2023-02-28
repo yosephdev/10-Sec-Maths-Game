@@ -64,15 +64,45 @@ $(document).ready(function(){
     checkAnswer(Number($(this).val()), currentQuestion.answer);
   });
 
-	$('#restart-button').on('click', function () {
-		if (interval) {
-			clearInterval(interval);
-		}
-		timeLeft = 10;
-		$('#time-left').text(timeLeft);
-		score = 0;
-		$('#score').text(score);
-		renderNewQuestion()
-	});
+  $('#restart-button').on('click', function () {
+    if (interval) {
+      clearInterval(interval);
+    }
+    timeLeft = 10;
+    $('#time-left').text(timeLeft);
+    score = 0;
+    $('#score').text(score);
+    renderNewQuestion()
+  });
+
+  // change the color of the equation
+  $('#equation').css('color', '#27ae60');
+  
+  // animate the time-left value on load
+  $('#time-left').animate({ fontSize: '100px' }, 1000, function() {
+    $(this).animate({ fontSize: '40px' }, 1000);
+  });
+  
+  // change the background color of the insertBox div
+  $('.insertBox').css('background-color', '#ecf0f1');
+  
+  // add hover effect on restart button
+  $('#restart-button').hover(function() {
+    $(this).css('background-color', '#8e44ad');
+  }, function() {
+    $(this).css('background-color', '#9b59b6');
+  });
+  
+  // add border to user-input field
+  $('#user-input').css('border', '2px solid #34495e');
+  
   renderNewQuestion();
+});
+
+$(document).ready(function () {
+  var currentDate = new Date();
+  var day = currentDate.getDate();
+  var month = currentDate.getMonth() + 1;
+  var year = currentDate.getFullYear();
+  $("#current-date").text(month + "/" + day + "/" + year);
 });
