@@ -1,36 +1,40 @@
 body {
 	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f0f0f0;
 }
 
 .title {
 	font-size: 3rem;
 	margin-top: 2rem;
 	text-align: center;
-	color: #fff;
+	color: #333;
 	padding-top: 30px;
 }
 
-.game-description{
+.game-description {
 	text-align: center;
-		font-size: 1.6rem;
-		font-weight: 500;
-		color: #fff;
-		margin: 2rem auto;
-		max-width: 600px;
+	font-size: 1.6rem;
+	font-weight: 500;
+	color: #333;
+	margin: 2rem auto;
+	max-width: 600px;
+	line-height: 1.6;
 }
 
 .centerdiv {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 80vh;
+	height: 50vh;
 }
 
 .insertBox {
-	background-color: rgba(255, 255, 255, 0.8);
+	background-color: #fff;
 	border-radius: 10px;
 	padding: 2rem;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 .middleBox {
@@ -43,6 +47,13 @@ body {
 	font-size: 3rem;
 	font-weight: bold;
 	margin-bottom: 2rem;
+	color: #4CAF50;
+}
+
+.background-section {
+	background-image: url('background.jpg');
+	background-size: cover;
+	background-position: center;
 }
 
 .user-input {
@@ -51,9 +62,10 @@ body {
 	text-align: center;
 	padding: 1rem;
 	margin-bottom: 2rem;
-	border: none;
+	border: 2px solid #4CAF50;
 	border-radius: 10px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	box-shadow: none;
+	outline: none;
 }
 
 .score {
@@ -71,8 +83,9 @@ body {
 	border-radius: 10px;
 	padding: 1rem 2rem;
 	margin-top: 2rem;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	box-shadow: none;
 	cursor: pointer;
+	transition: background-color 0.3s;
 }
 
 .restart-button:hover {
@@ -80,9 +93,10 @@ body {
 }
 
 footer {
-	background-color: #222;
+	background-color: #333;
 	color: #fff;
 	padding: 50px 0;
+	text-align: center;
 }
 
 footer h3 {
@@ -109,6 +123,8 @@ footer a:hover {
 
 footer hr {
 	border-top: 1px solid #fff;
+	width: 70%;
+	margin: 20px auto;
 }
 
 footer p {
