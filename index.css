@@ -85,11 +85,12 @@ body {
 	margin-top: 2rem;
 	box-shadow: none;
 	cursor: pointer;
-	transition: background-color 0.3s;
+	transition: background-color 0.3s, transform 0.2s;
 }
 
 .restart-button:hover {
 	background-color: #3e8e41;
+	transform: scale(1.05);
 }
 
 footer {
@@ -133,4 +134,35 @@ footer p {
 
 footer #current-date {
 	font-weight: bold;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+	.title {
+		font-size: 2.5rem;
+	}
+	.game-description {
+		font-size: 1.4rem;
+	}
+	.user-input {
+		font-size: 1.5rem;
+	}
+	.score {
+		font-size: 1.5rem;
+	}
+}
+
+/* Loading spinner styles */
+.loading-spinner {
+	border: 8px solid #f3f3f3; 
+	border-top: 8px solid #3498db; 
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
 }

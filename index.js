@@ -67,14 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
     restartButton.disabled = false;
   };
 
-  userInput.addEventListener("keyup", function (event) {
-    if (event.key === "Enter") {
-      startGame();
-      checkAnswer();
-    }
-  });
-
-  restartButton.addEventListener("click", function () {
+  const resetGameState = () => {
     clearInterval(interval);
     interval = null;
     timeLeft = COUNTDOWN_SECONDS;
@@ -83,6 +76,25 @@ document.addEventListener("DOMContentLoaded", function () {
     scoreElement.textContent = score;
     userInput.disabled = false;
     restartButton.disabled = true;
+  };
+
+  const validateInput = (input) => {
+    return !isNaN(input) && input.trim() !== "";
+  };
+
+  userInput.addEventListener("keyup", function (event) {
+    if (event.key === "Enter") {
+      startGame();
+      if (validateInput(userInput.value)) {
+        checkAnswer();
+      } else {
+        alert("Please enter a valid number.");
+      }
+    }
+  });
+
+  restartButton.addEventListener("click", function () {
+    resetGameState();
     startGame();
   });
 

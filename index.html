@@ -8,69 +8,70 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link href="index.css" rel="stylesheet" type="text/css">
+  <meta name="description" content="Test your math skills with the 10-Second Math Game. Solve equations quickly and improve your score!">
 </head>
 
 <body>
-  <section class="background-section">
-    <h1 class="title">10-Second Math Game</h1>
-    <p class="game-description">
-      You will be given a simple math equation and 10 seconds to solve it.
-      Enter your answer and hit 'Enter' to submit your answer.
-      You will receive 1 point for each correct answer. The game will end after 10 questions or when time runs out,
-      whichever comes first. Good luck!
-    </p>
+  <main>
+    <section class="background-section">
+      <h1 class="title">10-Second Math Game</h1>
+      <p class="game-description">
+        You will be given a simple math equation and 10 seconds to solve it.
+        Enter your answer and hit 'Enter' to submit your answer.
+        You will receive 1 point for each correct answer. The game will end after 10 questions or when time runs out,
+        whichever comes first. Good luck!
+      </p>
 
-    <div class="centerdiv">
-      <div class="insertBox">
-        <div class="middleBox">
-          <div class="equation-box">
-            <h2 class="equation"></h2>
+      <div class="centerdiv">
+        <div class="insertBox">
+          <div class="middleBox">
+            <div class="equation-box">
+              <h2 class="equation"></h2>
+            </div>
+            <input id="user-input" type="number" class="user-input" aria-label="Enter your answer" />
+            <h4>Score: <span id="score" class="score">0</span></h4>
+            <button id="restart-button" class="btn restart-button" disabled aria-label="Restart the game">Restart</button>
           </div>
-          <input id="user-input" type="number" class="user-input" />
-          <h4>Score: <span id="score" class="score">0</span></h4>
-          <button id="restart-button" class="btn restart-button" disabled>Restart</button>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer>
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h3>About Us</h3>
-            <p>
-              Welcome to the 10-Second Math Game! Created during the Full Stack Web Development bootcamp at Altcademy.
-            </p>
-          </div>
-          <div class="col-md-3">
-            <h3>Quick Links</h3>
-            <nav>
-              <ul>
-                <li><a href="https://yoseph.dev/">Home</a></li>
-                <li><a href="https://yoseph.dev/about/">About</a></li>
-                <li><a href="https://yoseph.dev/portfolio/">Services</a></li>
-                <li><a href="https://yoseph.dev/contact/">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="col-md-3">
-            <h3>Contact Us</h3>
-            <address>
-              Jungfrugatan 1F<br />
-              Katrineholm, Sweden 641 31<br />
-              Phone: <a href="tel:+467033566108">(46) 703-356 6108</a><br />
-              Email: <a href="mailto:contact@yoseph.dev">contact@yoseph.dev</a>
-            </address>
-          </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h3>About Us</h3>
+          <p>
+            Welcome to the 10-Second Math Game! Created during the Full Stack Web Development bootcamp at Altcademy.
+          </p>
         </div>
-        <div class="copyright">
-          <hr />
-          <p>&copy; 2023 Yosephh Berhane. All rights reserved.</p>
+        <div class="col-md-3">
+          <h3>Quick Links</h3>
+          <nav>
+            <ul>
+              <li><a href="https://yoseph.dev/">Home</a></li>
+              <li><a href="https://yoseph.dev/">About</a></li>
+              <li><a href="https://yoseph.dev/resume.html">Resume</a></li>
+              <li><a href="https://yoseph.dev/contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-md-3">
+          <h3>Contact Us</h3>
+          <address>
+            Jungfrugatan 1F<br />
+            Katrineholm, Sweden 641 31<br />
+            Phone: <a href="tel:+467033566108">(46) 703-356 6108</a><br />
+            Email: <a href="mailto:contact@yoseph.dev">contact@yoseph.dev</a>
+          </address>
         </div>
       </div>
-    </footer>
+      <div class="copyright">
+        <hr />
+        <p>&copy; 2024 Yosephh Berhane. All rights reserved.</p>
+      </div>
+    </div>
   </footer>
   <script src="index.js"></script>
 </body>
